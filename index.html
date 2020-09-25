@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bosh Sahifa | Pixer</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <!-- Site Header -->
+  
+  <header class="site-header site-header--nojs">
+    <div class="container">
+      <div class="site-header-content">
+        <div class="site-header-controller">
+          <a class="logo" href="index.html">
+            <img class="site-logo" src="img/pixer-logo.png" alt="Logo of pixer" width="58" height="20" srcset="img/pixer-logo.png 1x, img/pixer-logo@2x.png 2x">
+          </a>
+  
+          <button class="site-header__toggler" type="button">
+            <span>Menu</span>
+          </button>
+        </div>
+        
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link nav-active-link" href="index.html">Bosh sahifa</a>
+            </li>
+            <li class="nav-item nav-item-menu">
+              <a class="nav-link" href="services.html">Xizmatlar</a>
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="website.html">Vebsayt</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="telegram-bot.html">Telegram bot</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="smm.html">SMM</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="graphic-design.html">Grafik dizayn</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="crm.html">CRM tizim</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Jamoa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Kontaktlar</a>
+            </li>
+          </ul>
+          
+          <a class="site-phone" href="tel:+998909213711">+998 90 921 37 11</a>
+        </nav>
+      </div><!-- site-header-content -->
+    </div><!-- container -->
+  </header>
+  
+
+  <script>
+    var elSiteHeader = document.querySelector('.site-header');
+    var elSiteHeaderToggler = document.querySelector('.site-header__toggler');
+
+    elSiteHeader.classList.remove('site-header--nojs');
+
+    elSiteHeaderToggler.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('site-header--open');
+    });
+  </script>
+  
+</body>
+</html>
